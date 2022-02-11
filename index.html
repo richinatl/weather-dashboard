@@ -4,7 +4,77 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather Dashbord</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="card text-white banner--container">
+      <h1 class="card-title text-center">Weather Dashboard</h1>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 py-4">
+          <h2 class="pb-2">Search for a City:</h2>
+          <form>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="userInput"
+                placeholder="Find your destination"
+              /><br />
+              <button type="button" class="btn btn-primary" id="search">
+                <i class="fa fa-search"></i> Search
+              </button>
+              <button class="btn btn-light" id="clear">
+                <i class="fa fa-trash"></i> Clear
+              </button>
+            </div>
+          </form>
+          <div id="cities"></div>
+        </div>
+        <div class="col-md-9 py-4">
+          <h2 class="pb-2">Current Conditions</h2>
+          <div id="current__div" class="p-3">
+            <div class="city__div"></div>
+            <div class="Image__div"></div>
+            <div class="temp"></div>
+            <div class="humidity"></div>
+            <div class="windspeed__div"></div>
+            <div class="uv__div"></div>
+          </div>
+
+          <h2 class="pt-4 pb-2">5 Day Forecast</h2>
+          <div class="forcast--container">
+            <div class="card-deck mx-0">
+              <div id="fiveDay" class="d-flex flex-row forecast"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
 </html>
