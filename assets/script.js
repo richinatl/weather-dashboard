@@ -130,7 +130,7 @@ function fiveDayForecast(city) {
 }
 
 function renderFiveDay({ list }) {
-  for (let i = 0; i < list.length; i++) {
+  for (let i = 0; i < list.length; i += 8) {
     console.log({ list });
     const date = list[i].dt_txt;
     const formatDate = moment(date).format("l");
