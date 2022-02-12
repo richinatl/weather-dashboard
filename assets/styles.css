@@ -5,6 +5,7 @@ body {
 
 .forecast__image {
   object-fit: cover;
+  color: none;
 }
 
 .banner--container {

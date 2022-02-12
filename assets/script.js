@@ -63,7 +63,7 @@ function currentConditions(city) {
 
 function renderCurrent(currentConditions) {
   $(".city__div").html(
-    `<h2>${currentConditions.name} ${moment().format("L")}</h2>`
+    `<h2>${currentConditions.name} ${moment().format("l")}</h2>`
   );
 
   const iconImg = $("<img>");
@@ -130,9 +130,10 @@ function fiveDayForecast(city) {
 }
 
 function renderFiveDay({ list }) {
-  for (let i = 0; i < list.length; i += 8) {
+  for (let i = 0; i < list.length; i++) {
+    console.log({ list });
     const date = list[i].dt_txt;
-    const formatDate = moment(date).format("L");
+    const formatDate = moment(date).format("l");
     const temp = (list[i].main.temp_max - 273.15) * 1.8 + 32;
     const humidity = list[i].main.humidity;
     const windSpeed = list[i].wind.speed;
