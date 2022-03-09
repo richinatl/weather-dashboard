@@ -2,7 +2,7 @@
 
 The goal was to provide a weather application that was easy to use and stored recent searches for convenience.
 
-I used bootstrap for basic styling and some custom css to make the app more visually appealing, and jquery along with the open weather api to provide functionality. This was an excellent learning experience, there are some a couple of feature I'd like to add in the future, especially having the enter key initiate a search along with the search button. 
+I used bootstrap for basic styling and some custom css to make the app more visually appealing, and jquery along with the open weather api to provide functionality. This was an excellent learning experience, there are a couple of feature I'd like to add in the future, especially having the enter key initiate a search along with the search button. 
 
 
 This github repository is here https://github.com/richinatl/weather-dashboard
