@@ -14,6 +14,7 @@ You can see the deployed page here https://richinatl.github.io/weather-dashboard
 
 ![Screenshot 2022-02-11 145900](https://user-images.githubusercontent.com/95508564/153670255-ad2e9af6-1680-407b-a77a-a0d5ea64be10.png)
 
+
 ![Screenshot 2022-03-09 151814](https://user-images.githubusercontent.com/95508564/157528191-0d335f47-7bef-4d66-9522-3be2146b066e.png)
 
 
